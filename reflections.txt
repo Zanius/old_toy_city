@@ -1,0 +1,27 @@
+1. How long did you spend working on this project?
+
+  I spent about 6 hours on this project over 2 days.
+
+2. What was the most rewarding challenge you conquered?
+
+  It was very difficult to correctly implement the error messages. 
+  I had a hard time actually finding if a duplicate existed and I found the
+  detect method which was super useful. The actual error messages themselves
+  were easy once I figured out how little I actually had to do to get them working.
+
+3.What two additional features did you build? Why?
+
+  Feature 1: I was annoyed that the output of "puts walter.purchase(nanoblock)"
+  was very unreadable data. So I found out how to use the to_s method in transaction.rb
+  whenever it's printed and converted to a string it actually displays information. I
+  like having readable output.
+
+  Feature 2: I thought it would be nice to see purchase history of customers so
+  I added an array for every customer which shows their purchase history. 
+
+4. Where do you still have room to grow?
+
+  I was a bit annoyed that it took me so long to implement a good solution for
+  checking duplicate product titles. I finally figured out the solution but I 
+  feel like I should really turn to the internet much faster when I'm having problems 
+  like that instead of trying to write crazy loops and such.

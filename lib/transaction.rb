@@ -10,6 +10,7 @@ class Transaction
     @@count += 1
     add_to_transactions
     @product.lower_stock
+    @customer.add_to_purchase_history(product)
   end
 
 
@@ -17,8 +18,9 @@ class Transaction
     @@transactions
   end
 
+  #When a purchase is made this displays information about the transaction
   def to_s
-    "Transaction id: #{@id}, customer: #{@customer.name}, product: #{@product.title}"
+    "------\nA new purchase has been made:\nTransaction id: #{@id}, customer: #{@customer.name}, product: #{@product.title}\n------"
   end
 
   def self.find(transaction_id)

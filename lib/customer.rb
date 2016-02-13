@@ -1,9 +1,10 @@
 class Customer
-  attr_reader :name
+  attr_reader :name, :purchase_history
   @@customers = []
 
   def initialize(options={})
     @name = options[:name]
+    @purchase_history = []
     add_to_customers
   end
 
@@ -17,6 +18,10 @@ class Customer
 
   def purchase(product)
     Transaction.new(self, product)
+  end
+
+  def add_to_purchase_history(product)
+    @purchase_history << product.title
   end
 
   private
