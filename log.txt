@@ -1,0 +1,41 @@
+commit 80480f60ae226b9ef6f5ab5990feb3998b3ee622
+Author: Zane Brown <zib1991@gmail.com>
+Date:   Sat Feb 13 13:00:57 2016 -0500
+
+    Removed superfluous file
+
+commit f903940e7cffacdb34fbf9ce89c7eb7e1cdf54ee
+Author: Zane Brown <zib1991@gmail.com>
+Date:   Sat Feb 13 12:58:08 2016 -0500
+
+    Added second optional feature and reflections file
+
+commit 83a1cc9e2f222e33b17897d95ba0414ee041b35d
+Author: Zane Brown <zib1991@gmail.com>
+Date:   Sat Feb 13 00:49:06 2016 -0500
+
+    Finished base project and added to_s method as first new feature
+
+commit 77fee52c5cf8518d20ac1928da0288b8d7952193
+Author: Zane Brown <zib1991@gmail.com>
+Date:   Fri Feb 12 23:30:03 2016 -0500
+
+    Added erorr message for duplicate products
+
+commit 5ea8f4966e917605c21ab764a306da4837a22f5f
+Author: Zane Brown <zib1991@gmail.com>
+Date:   Fri Feb 12 18:15:43 2016 -0500
+
+    Added products and customers methods
+
+commit a911a08819acc0fb9fb3d28474d94f7f5de40a99
+Author: Zane Brown <zib1991@gmail.com>
+Date:   Fri Feb 12 17:11:34 2016 -0500
+
+    Changed products class to be able to read titles and moved adding products into an array into its own method
+
+commit e31204c1a218546af0278b8bcd427477973cf3d0
+Author: Zane Brown <zib1991@gmail.com>
+Date:   Fri Feb 12 17:07:25 2016 -0500
+
+    First Commit
