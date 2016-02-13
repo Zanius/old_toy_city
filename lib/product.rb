@@ -25,7 +25,13 @@ class Product
     @@products.select {|product| product.stock > 0}
   end
 
-
+  def lower_stock
+    if @stock <= 0
+      raise OutOfStockError, "#{@title} is out of stock."
+    else
+      @stock -= 1
+    end
+  end
 
   private
 

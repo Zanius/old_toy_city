@@ -15,10 +15,17 @@ class Customer
     @@customers.select { |customer| customer.name == customer_name}[0]
   end
 
+  def purchase(product)
+    Transaction.new(self, product)
+  end
 
   private
 
   def add_to_customers
-    @@customers << self
+    if @@customers.detect{ |customer| customer.name == self.name}
+      raise DuplicateCustomerError, "#{self.name} already exists."
+    else
+      @@customers << self
+    end
   end
 end
