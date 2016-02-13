@@ -25,9 +25,16 @@ class Product
     @@products.select {|product| product.stock > 0}
   end
 
+
+
   private
 
   def add_to_products
-    @@products << self
+    if @@products.detect{ |product| product.title == self.title}
+      raise DuplicateProductError, "#{self.title} already exists."
+    else
+      @@products << self
+    end
   end
 end
+
