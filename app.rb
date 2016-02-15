@@ -58,7 +58,6 @@ puts nanoblock.stock # Should return 11
 # PURCHASES
 
 puts walter.purchase(nanoblock)
-walter.purchase(ultron)
 
 puts Transaction.all.count # Should return 2
 
